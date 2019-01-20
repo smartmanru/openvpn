@@ -68,7 +68,7 @@ scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\Users\slavikmipt
 https://openvpn.net/community-downloads/
 
 Импортируем конфиг и подключаемся к VPN
-
+**TODO:**
 ### RSA keypair
 Генерируем ключи, защищаем ssh
 
