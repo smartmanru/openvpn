@@ -61,7 +61,7 @@ Your client configuration is available at: /root/client-amst-udp1.1.ovpn
 Копируем конфиг с сервера на компьютер
 Из командной строки Windows:
 ```bash
-scp root@s7.mediatube.xyz:/root/client-amst-udp1.1.ovpn C:\Users\slavikmipt
+scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\Users\slavikmipt
 ```
 ### OpenVPN Client
 Устанавливаем клиент OpenVPN
