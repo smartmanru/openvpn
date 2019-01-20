@@ -37,8 +37,18 @@
 >    - Ссылка: https://vm-nl.vds.sh/vmmgr
 >    - Пользователь: yourname
 >    - Пароль: gjQeB212xxxx
+
 ### SSH: Secure Shell
-Устанавливаем [PuTTY](https://www.putty.org)
+🛠 Устанавливаем пакет утилит [PuTTY](https://www.putty.org)
+
+* Запускаем PuTTY
+* Вводим IP-адрес сервера и жмем 'Open'
+* На Security Alert жмем "Да"
+* Вводим пользователя(root) и пароль
+Загружаем скрипт настройки OpenVPN
+```shell
+wget https://raw.githubusercontent.com/mediatube/openvpn/master/openvpn-install.sh
+```
 Подключаемся к серверу по SSH под root
 Запускаем openvpn-installer.py
 Копируем конфиг
