@@ -384,6 +384,8 @@ dev tun
 proto $PROTOCOL
 sndbuf 0
 rcvbuf 0
+auth-nocache
+mute-replay-warnings
 remote $IP $PORT
 resolv-retry infinite
 nobind
