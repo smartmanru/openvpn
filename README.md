@@ -37,14 +37,39 @@
 >    - Ссылка: https://vm-nl.vds.sh/vmmgr
 >    - Пользователь: yourname
 >    - Пароль: gjQeB212xxxx
-### SSH: Secure Shell
-Устанавливаем [PuTTY](https://www.putty.org)
-Подключаемся к серверу по SSH под root
-Запускаем openvpn-installer.py
-Копируем конфиг
-scp root@s7.mediatube.xyz:client-ne-udp1.2.ovpn C:\Users\slavikmipt
-### OpenVPN Client
 
+### SSH: Secure Shell
+🛠 Устанавливаем пакет утилит [PuTTY](https://www.putty.org)
+
+* Запускаем PuTTY
+* Вводим IP-адрес сервера и жмем 'Open'
+* На Security Alert жмем "Да"
+* Вводим пользователя(root) и пароль
+
+Загружаем и запускаем скрипт настройки OpenVPN
+```bash 
+wget https://raw.githubusercontent.com/mediatube/openvpn/master/openvpn-install.sh
+
+bash openvpn-install.sh
+```
+Задаем параметры отвечая на вопросы скрипта
+![startconfing](/img/002.png)
+Запускаем установку нажатием любой кнопки, в конце будет сгенерирован конфиг для клиента:
+```bash
+Your client configuration is available at: /root/client-amst-udp1.1.ovpn
+```
+Копируем конфиг с сервера на компьютер
+Из командной строки Windows:
+```bash
+scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\Users\slavikmipt
+```
+### OpenVPN Client
+Устанавливаем клиент OpenVPN
+https://openvpn.net/community-downloads/
+
+Импортируем конфиг и подключаемся к VPN
+**TODO:**
 ### RSA keypair
+Генерируем ключи, защищаем ssh
 
 ### close 22 port
