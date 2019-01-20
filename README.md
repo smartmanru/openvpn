@@ -63,6 +63,11 @@ Your client configuration is available at: /root/client-amst-udp1.1.ovpn
 ```bash
 scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\Users\slavikmipt
 ```
+Устанавливаем [PuTTY](https://www.putty.org)
+Подключаемся к серверу по SSH под root
+Запускаем openvpn-installer.py
+Копируем конфиг
+scp root@s7.mediatube.xyz:client-ne-udp1.2.ovpn C:\Users\slavikmipt
 ### OpenVPN Client
 Устанавливаем клиент OpenVPN
 https://openvpn.net/community-downloads/
