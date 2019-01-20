@@ -37,3 +37,14 @@
 >    - Ссылка: https://vm-nl.vds.sh/vmmgr
 >    - Пользователь: yourname
 >    - Пароль: gjQeB212xxxx
+### SSH: Secure Shell
+Устанавливаем [PuTTY](https://www.putty.org)
+Подключаемся к серверу по SSH под root
+Запускаем openvpn-installer.py
+Копируем конфиг
+scp root@s7.mediatube.xyz:client-ne-udp1.2.ovpn C:\Users\slavikmipt
+### OpenVPN Client
+
+### RSA keypair
+
+### close 22 port
