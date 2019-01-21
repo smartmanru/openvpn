@@ -1,5 +1,7 @@
 ## Поднимаем свой OpenVPN сервер за пару минут.
+
 ![preview](/img/003.png)
+
 ### VDS: Virtual Dedicated Server
 Вам потребуется [виртуальный сервер](https://ru.wikipedia.org/wiki/VPS) в Европе с которого будут доступны заблокированные в России ресурсы, но при этом приемлимый пинг. 
 Параметры сервера - минимальные, по сути нам нужен удаленный роутер с публичным IP адресом. 
@@ -49,6 +51,7 @@
 ![startconfing](/img/005.png)
 
 * Загружаем и запускаем скрипт настройки OpenVPN
+
 ```bash 
 wget https://raw.githubusercontent.com/mediatube/openvpn/master/openvpn-install.sh
 
@@ -59,10 +62,12 @@ bash openvpn-install.sh
 ![startconfing](/img/006.png)
 
 * Запускаем установку нажатием любой кнопки, в конце будет сгенерирован конфиг для клиента:
+
 ```bash
 Your client configuration is available at: /root/client-amst-udp1.1.ovpn
 ```
 * Копируем конфиг с сервера на компьютер
+
 ```bash
 win-cmd>scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\\Users\\youruser
 ```
