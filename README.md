@@ -46,6 +46,8 @@
 * На Security Alert жмем "Да"
 * Вводим пользователя(root) и пароль
 
+![startconfing](/img/005.png)
+
 Загружаем и запускаем скрипт настройки OpenVPN
 ```bash 
 wget https://raw.githubusercontent.com/mediatube/openvpn/master/openvpn-install.sh
@@ -53,7 +55,9 @@ wget https://raw.githubusercontent.com/mediatube/openvpn/master/openvpn-install.
 bash openvpn-install.sh
 ```
 Задаем параметры отвечая на вопросы скрипта
-![startconfing](/img/002.png)
+
+![startconfing](/img/006.png)
+
 Запускаем установку нажатием любой кнопки, в конце будет сгенерирован конфиг для клиента:
 ```bash
 Your client configuration is available at: /root/client-amst-udp1.1.ovpn
