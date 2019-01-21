@@ -48,30 +48,30 @@
 
 ![startconfing](/img/005.png)
 
-Загружаем и запускаем скрипт настройки OpenVPN
+* Загружаем и запускаем скрипт настройки OpenVPN
 ```bash 
 wget https://raw.githubusercontent.com/mediatube/openvpn/master/openvpn-install.sh
 
 bash openvpn-install.sh
 ```
-Задаем параметры отвечая на вопросы скрипта
+* Задаем параметры отвечая на вопросы скрипта
 
 ![startconfing](/img/006.png)
 
-Запускаем установку нажатием любой кнопки, в конце будет сгенерирован конфиг для клиента:
+* Запускаем установку нажатием любой кнопки, в конце будет сгенерирован конфиг для клиента:
 ```bash
 Your client configuration is available at: /root/client-amst-udp1.1.ovpn
 ```
-Копируем конфиг с сервера на компьютер
+* Копируем конфиг с сервера на компьютер
 Из командной строки Windows:
 ```bash
-scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\Users\slavikmipt
+scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\Users\youruser
 ```
 Устанавливаем [PuTTY](https://www.putty.org)
 Подключаемся к серверу по SSH под root
 Запускаем openvpn-installer.py
 Копируем конфиг
-scp root@s7.mediatube.xyz:client-ne-udp1.2.ovpn C:\Users\slavikmipt
+scp root@91.xxx.xxx.xxx:client-ne-udp1.2.ovpn C:\Users\youruser
 ### OpenVPN Client
 Устанавливаем клиент OpenVPN
 https://openvpn.net/community-downloads/
