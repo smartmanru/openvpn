@@ -64,16 +64,16 @@ Your client configuration is available at: /root/client-amst-udp1.1.ovpn
 ```
 * Копируем конфиг с сервера на компьютер
 ```bash
-win-cmd\>scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\\Users\\youruser
+win-cmd>scp root@91.xxx.xxx.xxx:/root/client-amst-udp1.1.ovpn C:\\Users\\youruser
 ```
 
 ### OpenVPN Client
-Устанавливаем клиент OpenVPN
+* Устанавливаем клиент OpenVPN
+
 https://openvpn.net/community-downloads/
 
-Импортируем конфиг и подключаемся к VPN
-**TODO:**
-### RSA keypair
-Генерируем ключи, защищаем ssh
+* Импортируем конфиг и подключаемся к VPN
 
-### close 22 port
+**TODO:**
+### RSA e.t.c.
+Генерируем ключи, защищаем ssh, генерация RSA ключей, авторизация по RSA, скрипты генерации и загрузки конфигов, прокси
