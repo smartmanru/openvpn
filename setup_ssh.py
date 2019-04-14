@@ -176,8 +176,8 @@ class SSHConfig(object):
         try:
             with io.open(self.sshd_config_tpl_path, mode='r', encoding='utf-8') as ft:
                 text = ft.read()
-                text = re.sub('\$ALLOWUSERS', self.username, text, flags=re.UNICODE)
-                text = re.sub('\$PORT', self.ssh_port, text, flags=re.UNICODE)
+                text = re.sub('\$ALLOWUSERS', self.username, text)
+                text = re.sub('\$PORT', self.ssh_port, text)
                 with io.open(self.sshd_config_path, mode='w', encoding='utf-8') as fo:
                     fo.write(text)
             return True
